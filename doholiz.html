@@ -194,20 +194,3 @@
   </script>
 </body>
 </html>
-// ✅ Send email notification
-    const recipients = "khantowru@gmail.com,hasiburrahman3@gmail.com";
-    const subject = "New Doholiz Guest Review Submitted";
-    const emailBody = `
-      A new guest review has been submitted:
-
-      Name: ${body.name || ''}
-      Email: ${body.email || ''}
-      Room: ${body.room || ''}
-      Type: ${body.type || ''}
-      Rating: ${body.rating || ''}
-      Visit Date: ${body.visitDate || ''}
-      Message: ${body.message || ''}
-      
-      Timestamp: ${new Date().toISOString()}
-    `;
-    MailApp.sendEmail(recipients, subject, emailBody);
